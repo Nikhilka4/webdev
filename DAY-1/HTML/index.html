@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head> 
+  <title>My College form</title>
+  <style>
+    table, th, td {
+      border:1px solid black;
+      border-collapse: collapse;
+    }
+    </style>
+</head>
+<body>
+
+
+
+<div class="time-table">
+  <h2>Time Table</h2>
+
+  <table style="width:100%">
+    <tr>
+      <th rowspan="2">Days</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th rowspan="2">12:00- <br>12:30</th>
+      <th>4</th>
+      <th>5</th>
+      <th>6</th>
+      <th>7</th>
+    </tr>
+    <tr>
+      <th>09:00-10:00</th>
+      <th>09:00-10:00</th>
+      <th>09:00-10:00</th>
+      <th>09:00-10:00</th>
+      <th>09:00-10:00</th>
+      <th>09:00-10:00</th>
+      <th>09:00-10:00</th>
+    </tr>
+    <tr>
+      <th>Mon</th>
+      <td>subject-1</td>
+      <td>subject-1</td>
+      <td>subject-1</td>
+      <td rowspan="6" style="writing-mode: vertical-lr;
+      text-orientation: upright;">Lunch</td>
+      <td>subject-1</td>
+      <td>subject-1</td>
+      <td>subject-1</td>
+      <td>subject-1</td>
+      
+    </tr>
+    <tr>
+      <th>Tue</th>
+      <td>subject-1</td>
+      <td>subject-1</td>
+      <td>subject-1</td>
+      
+      <td>subject-1</td>
+      <td>subject-1</td>
+      <td>subject-1</td>
+      <td>subject-1</td>
+      
+    </tr>
+    <tr>
+      <th>Wed</th>
+      <td>subject-1</td>
+      <td>subject-1</td>
+      <td>subject-1</td>
+      
+      <td>subject-1</td>
+      <td>subject-1</td>
+      <td>subject-1</td>
+      <td>subject-1</td>
+      
+    </tr>
+    <tr>
+      <th>Thur</th>
+      <td>subject-1</td>
+      <td>subject-1</td>
+      <td>subject-1</td>
+      
+      <td>subject-1</td>
+      <td>subject-1</td>
+      <td>subject-1</td>
+      <td>subject-1</td>
+      
+    </tr>
+    <tr>
+      <th>Fri</th>
+      <td>subject-1</td>
+      <td>subject-1</td>
+      <td>subject-1</td>
+      
+      <td>subject-1</td>
+      <td>subject-1</td>
+      <td>subject-1</td>
+      <td>subject-1</td>
+      
+    </tr>
+    <tr>
+      <th>Sat</th>
+      <td>subject-1</td>
+      <td>subject-1</td>
+      <td>subject-1</td>
+      
+      <td>subject-1</td>
+      <td>subject-1</td>
+      <td>subject-1</td>
+      <td>subject-1</td>
+      
+    </tr>
+  </table>
+</div>
+
+<div class="form">
+  <form action="post.php">
+
+    <h2>College Form</h2>
+    <label for="first_name">First Name:</label> 
+    <input type="text" name="first_name"> <br>
+
+    <label for="last_name">Last Name:</label> 
+    <input type="text" name="last_name"> <br>
+
+    <label for="Appli-no">Application Number:</label>
+    <input type="number" name="Appli-no" min="1" max="20"><br>
+
+    <label for="DOB">First Name:</label>
+    <input type="date" name="DOB"><br>
+
+    <label for="Country">Select your country:</label>
+    <select name="Country">
+      <option value="india">India</option>
+      <option value="india">India</option>
+      <option value="india">India</option>
+      <option value="india">India</option>
+      <option value="india">India</option>
+      <option value="india">India</option>
+    </select> <br>
+
+    <label for="address">Address:</label>
+    <textarea name="address" cols="30" rows="1" placeholder="Enter your address"></textarea><br>
+
+    <label for="lang1">Select your 1<sup>st</sup> language:</label>
+    <select name="lang">
+      <option value="telugu">Telugu</option>
+      <option value="english">English</option>
+      <option value="hindi">Hindi</option>
+    </select><br>
+    <label for="lang2">Select your 2<sup>nd</sup> language:</label>
+    <select name="lang">
+      <option value="telugu">Telugu</option>
+      <option value="english">English</option>
+      <option value="hindi">Hindi</option>
+    </select><br>
+    <label for="lang">Select your 3<sup>rd</sup> language:</label>
+    <select name="lang">
+      <option value="telugu">Telugu</option>
+      <option value="english">English</option>
+      <option value="hindi">Hindi</option>
+    </select><br>
+
+    <label for="mark_file">Upload your 10<sup>th</sup> Marksheet:</label>
+    <input type="file" name="mark_file"><br>
+
+    <label for="email">Email:</label>
+    <input type="email" name="email"><br>
+
+    <label for="phone_no">Phone:</label>
+    <input type="tel" name="phone_no" pattern="[0-9]{10}"><br>
+
+    <label for="status">Marital status:</label>
+    <input type="radio" name="first_name"> Single
+    <input type="radio" name="first_name"> married <br>
+
+    <label for="tenth_marks">Enter your 10<sup>th</sup> CGPA:</label>
+    <input type="number" name="tenth_marks" min="1" max="10"> <br>
+
+    
+    <input type="submit" name="submit" value="Send">
+    
+    <input type="reset" name="reset" value="Delete">
+    
+  </form>
+</div>
+
+<div class="learning">
+  <ul>
+    <h1>My Learning</h1>
+    <li>What is Full stack web devlopment?</li>
+    <li>What is HTML-5?</li>
+    <li>What are Lists?</li>
+    <li>What are Tables?</li>
+    <li>What are Forms?</li>
+    <li>What are iframes?</li>
+    <li>What are headings?</li>
+  </ul>
+</div>
+
+
+</body>
+</html>
+
